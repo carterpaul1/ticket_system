@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible problem in PulseDesk
+title: 'fix: '
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Explain the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: '1. Open… 2. Choose… 3. See…'
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options: [Desktop, Mobile, MongoDB connected, Demo mode]
